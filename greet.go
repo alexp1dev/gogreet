@@ -1,7 +1,10 @@
 package greet
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/alex5p/gogreet/format"
+)
 
 func GreetingFor(name string) string {
-	return fmt.Sprintf("Hello, %s!", name)
+	return fmt.Sprintf(format.GreetingFormat(), name)
 }
